@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title> AR Part 2 </title>
+
+  <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+  <script src="https://maditya24.github.io/build/aframe-ar.min.js"></script>
+
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+
+<a-scene embedded vr-mode-ui="enabled: false"
+         arjs="sourceType: webcam; 
+         detectionMode: mono_and_matrix; 
+         matrixCodeType: 3x3; 
+         debugUIEnabled:false;">
+
+        <a-camera static />
+
+ 
+ <a-marker type="barcode" value="0">
+
+ <a-image src="https://ofaaim.github.io/Slide/Slide1.PNG" 
+          rotation="-90 0 0" 
+          width="2" 
+          height="2"> 
+ </a-image>
+
+ </a-marker>
+  </a-scene>
+
+</body>
+
+</html>
