@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <title>AR part 1</title>
+
+  <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+  <script src="https://maditya24.github.io/build/aframe-ar.min.js"></script>
+
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+
+ <a-scene embedded arjs='sourceType: webcam;'>
+
+ <a-marker-camera preset='0'></a-marker-camera>
+   
+ <a-image src="https://upload.wikimedia.org/wikipedia/commons/b/be/Joko_Widodo_2019_official_portrait.jpg" 
+          rotation="-90 0 0" 
+          width="2" 
+          height="2"> 
+ </a-image>
+
+  </a-scene>
+
+</body>
+
+</html>
